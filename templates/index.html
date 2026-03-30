@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SteamPulse | Live Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>📈 SteamPulse</h1>
+        <p>Live Market Heat & Engagement Monitor</p>
+    </header>
+
+    <div class="container">
+        {% for game in games %}
+        <div class="card">
+            <img src="{{ game.image }}" alt="{{ game.name }}">
+            <div class="info">
+                <h3>{{ game.name }}</h3>
+                <div class="status">
+                    <span class="pulse-icon"></span>
+                    <strong>{{ game.players }}</strong> active players
+                </div>
+                <a href="{{ game.link }}" target="_blank" class="btn">View on Store</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
