@@ -4,6 +4,11 @@
 **SteamPulse** is a full-stack Flask application that bridges the gap between commercial success and real-time player engagement. By aggregating data from the **Steam Store** and the **Official Steam Web API**, it provides a unified view of the current "Top 10 Sellers" alongside their live concurrent player counts.
 
 
+**🔗 Live Demo:** [https://steam-pulse-hazel.vercel.app/](https://steam-pulse-hazel.vercel.app/)
+
+---
+
+
 ---
 
 
