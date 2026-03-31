@@ -1,8 +1,9 @@
+import os
 from flask import Flask, render_template
 from app.scrapper import get_steampulse_data 
 
 # Initialize the Flask application
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 # Define a route for the homepage
 @app.route('/')
